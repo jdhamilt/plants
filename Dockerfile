@@ -23,7 +23,7 @@ RUN mkdir -p /config/apps && \
         cp ./src/main/liberty/lib/* /sharedlibs; \
     fi
 
-FROM ibmcom/websphere-liberty:webProfile7-ubi-min-amd64
+FROM ibmcom/websphere-liberty:latest
 
 ARG SSL=true
 

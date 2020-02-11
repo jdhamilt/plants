@@ -36,7 +36,7 @@ COPY --chown=1001:0 --from=build-stage /sharedlibs/ /opt/ibm/wlp/usr/shared/conf
 RUN mkdir -p /config/configDropins/defaults
 
 USER root
-RUN configure.sh
+
 USER 1001
 
 # Upgrade to production license if URL to JAR provided
